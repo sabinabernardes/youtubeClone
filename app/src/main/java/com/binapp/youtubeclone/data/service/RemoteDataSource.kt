@@ -8,7 +8,7 @@ import okhttp3.Response
 
 class RemoteDataSource {
 
-    private fun getVideo():ListVideo?{
+    fun getVideo():ListVideo?{
         val client : OkHttpClient =OkHttpClient.Builder()
             .build()
 
