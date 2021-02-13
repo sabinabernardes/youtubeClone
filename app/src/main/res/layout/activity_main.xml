@@ -20,6 +20,16 @@
         android:layout_height="match_parent"
         />
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:layout_gravity="center"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_main"
+        app:layout_constraintEnd_toEndOf="@+id/rv_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_main" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
