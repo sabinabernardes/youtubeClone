@@ -4,7 +4,7 @@ import com.binapp.youtubeclone.data.service.RemoteDataSource
 
 class VideoRepositoryImplementation {
 
-    fun getVideo(){
+    fun getVideo()=
         RemoteDataSource().getVideo()
-    }
+
 }
