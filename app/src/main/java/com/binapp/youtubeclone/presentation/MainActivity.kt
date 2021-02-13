@@ -18,12 +18,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val videos:MutableList<Video> = mutableListOf<Video>()
+        val videos:MutableList<Video> = mutableListOf()
         videoAdapter = VideoAdapter(videos){ video->
             println(video)
         }
-        rvMain.layoutManager = LinearLayoutManager(this)
-        rvMain.adapter=videoAdapter
+        rv_main.layoutManager = LinearLayoutManager(this)
+        rv_main.adapter=videoAdapter
 
         VideoRepositoryImplementation().getVideo()
 
