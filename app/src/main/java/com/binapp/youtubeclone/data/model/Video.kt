@@ -7,9 +7,9 @@ data class Video(
     val id:String,
     val thumbnailUrl:String,
     var title:String,
-    val publisherdAd:Date,
-    val viewCount:Long,
-    val viewCountLabel:String,
+    val publishedAt:Date,
+    val viewsCount:Long,
+    val viewsCountLabel:String,
     val duration:Int,
     val videoUrl:String,
     val publisher: Publisher

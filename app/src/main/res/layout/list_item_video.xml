@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:background="@tools:sample/backgrounds/scenic"
+
 
         />
 
@@ -25,6 +25,7 @@
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/ic_launcher_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/video_thumbnail"
@@ -35,8 +36,8 @@
         android:id="@+id/video_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
 
+        android:layout_marginStart="10dp"
         android:maxLines="2"
         android:text="Shaw Mendes, Camila Cabello"
         android:textStyle="bold"
