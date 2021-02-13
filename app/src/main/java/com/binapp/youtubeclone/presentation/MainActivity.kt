@@ -14,16 +14,18 @@ import kotlinx.coroutines.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var videoAdapter: VideoAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val videos:MutableList<Video> = mutableListOf()
+        val videos:MutableList<Video> = mutableListOf<Video>()
+
         videoAdapter = VideoAdapter(videos){ video->
             println(video)
         }
         rv_main.layoutManager = LinearLayoutManager(this)
-        rv_main.adapter=videoAdapter
+        rv_main.adapter= videoAdapter
 
         VideoRepositoryImplementation().getVideo()
 
@@ -35,8 +37,8 @@ class MainActivity : AppCompatActivity() {
                     videos.clear()
                     videos.addAll(listVideo.data)
                     videoAdapter.notifyDataSetChanged()
-                    progressBar.visibility = View.GONE
-                    motionContainer.removeView(progressBar)
+                    //progressBar.visibility = View.GONE
+                    //motionContainer.removeView(progressBar)
                 }
             }
         }
