@@ -11,7 +11,7 @@ import com.binapp.youtubeclone.data.model.formatted
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.list_item_video.view.*
 
-class VideoAdapter(private val videos: List<Video>, val onClick:(Video)->Unit): RecyclerView.Adapter<VideoAdapter.VideoHolder>(){
+class VideoAdapter(var videos: List<Video>, val onClick:(Video)->Unit): RecyclerView.Adapter<VideoAdapter.VideoHolder>(){
 
 
     inner class VideoHolder( itemView: View)
